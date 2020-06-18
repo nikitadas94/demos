@@ -17,7 +17,7 @@ terraform {
 }
 
 resource "azurerm_resource_group" "demo1" {
-  name     = "testrg1trainer1"
+  name     = "testrgtrainer2"
   location = "eastus"
   tags = {
       env = "resource-group-demo"
@@ -26,6 +26,6 @@ resource "azurerm_resource_group" "demo1" {
 }
 
 resource "azurerm_resource_group" "demo2" {
- name     = "testrg2trainer2"
+ name     = "testrgtrainer3"
   location = "southindia"
 }
