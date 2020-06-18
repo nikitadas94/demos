@@ -7,6 +7,15 @@ provider "azurerm" {
   features {}
 }
 
+terraform {
+    backend "azurerm" {
+        resource_group_name ="tfrgtrainer"
+        storage_account_name = "satrainer"
+        container_name = "con1"
+        key = "terraform.tfstate"
+    }
+}
+
 resource "azurerm_resource_group" "demo1" {
   name     = "testrg1trainer1"
   location = "eastus"
